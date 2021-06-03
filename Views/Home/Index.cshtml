@@ -1,7 +1,87 @@
-﻿@{ 
+﻿@{
     ViewData["Title"] = "Random Words Generator";
 }
 
-<p>hbfdjoipok fgidniospmo bviufgdiospom gdiubosinpf </p>
-<p>hbfdjoipok fgidniospmo bviufgdiospom gdiubosinpf </p>
-<p>hbfdjoipok fgidniospmo bviufgdiospom gdiubosinpf </p>
+<div class="form-dialog p-3">
+    <form>
+        <div class="form-group row m-2">
+            <div class="col-md-3 mt-1">
+                <div class="row">
+                    <label class="col-form-label text-center col-6">Words</label>
+                    <select class="form-control col-6">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3  mt-1">
+                <div class="row">
+                    <label class="col-form-label text-center  col-6">First Letter</label>
+                    <select class="form-control col-6">
+                        <option>a</option>
+                        <option>b</option>
+                        <option>c</option>
+                        <option>d</option>
+                        <option>e</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3 mt-1">
+                <div class="row">
+                    <label class="col-form-label text-center  col-6">Last Letter</label>
+                    <select class="form-control col-6">
+                        <option>w</option>
+                        <option>a</option>
+                        <option>c</option>
+                        <option>d</option>
+                        <option>e</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3 mt-1">
+                <div class="row">
+                    <label class="col-form-label text-center col-6">Paragraphs</label>
+                    <select class="form-control col-6">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 mt-1">
+                <div class="row">
+                    <label class="col-form-label text-center col-6">Minimum Length</label>
+                    <select class="form-control col-6">
+                        <option>4</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>   
+            <div class="col-md-6 mt-1">
+                <div class="row">
+                    <label class="col-form-label text-center col-6">Maximum Length</label>
+                    <select class="form-control col-6">
+                        <option>7</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <textarea class="form-control" placeholder="Randomly generated words will be placed here" rows="15"></textarea>
+        <div class="form-group mt-2">
+            <button class="btn btn-info w-25">Generate</button>
+            <button class="btn btn-danger w-25" type="reset">Reset</button>
+        </div>
+    </form>
+</div>
