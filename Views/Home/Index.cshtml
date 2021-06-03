@@ -64,7 +64,7 @@
                         <option>5</option>
                     </select>
                 </div>
-            </div>   
+            </div>
             <div class="col-md-6 mt-1">
                 <div class="row">
                     <label class="col-form-label text-center col-6">Maximum Length</label>
@@ -80,8 +80,28 @@
         </div>
         <textarea class="form-control" placeholder="Randomly generated words will be placed here" rows="15"></textarea>
         <div class="form-group mt-2">
-            <button class="btn btn-info w-25">Generate</button>
+            <button class="btn btn-primary w-25">Generate</button>
             <button class="btn btn-danger w-25" type="reset">Reset</button>
+            <button type="button" class="btn btn-warning w-25" data-toggle="modal" data-target="#AboutModal">Info</button>
+            <!-- Modal -->
         </div>
     </form>
+</div>
+<div class="modal fade" id="AboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">About</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                About text
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
