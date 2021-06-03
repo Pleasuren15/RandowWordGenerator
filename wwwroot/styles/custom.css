@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat&display=swap');
 
 body, html {
     height: 100%;
@@ -6,9 +6,10 @@ body, html {
     font-family: 'Montserrat', sans-serif;
 }
 
+
 .form-dialog {
     position: absolute;
-    top: 22%;
+    top: 30%;
     left: 27%;
     -ms-transform: translate(-20%, -20%);
     transform: translate(-20%, -20%);
@@ -17,8 +18,13 @@ body, html {
     border-radius: 7px;
 }
 
+.form-dialog-header {
+    font-family: 'Lilita One', cursive;
+    color: rgb(42, 118, 174);
+}
+
 .background {
-    height: 170%;
+    height: 140%;
     background-image: linear-gradient(106deg, rgba(79,141,187,1) 0%, rgba(136,2,136,1) 100%);
     background-position: center;
     background-repeat: no-repeat;

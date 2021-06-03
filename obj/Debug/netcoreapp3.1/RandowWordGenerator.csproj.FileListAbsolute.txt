@@ -9,7 +9,6 @@ C:\My_Stuff\Academics\Projects\VERY IMPORTANT\RandowWordGenerator\bin\Debug\netc
 C:\My_Stuff\Academics\Projects\VERY IMPORTANT\RandowWordGenerator\bin\Debug\netcoreapp3.1\RandowWordGenerator.pdb
 C:\My_Stuff\Academics\Projects\VERY IMPORTANT\RandowWordGenerator\bin\Debug\netcoreapp3.1\RandowWordGenerator.Views.dll
 C:\My_Stuff\Academics\Projects\VERY IMPORTANT\RandowWordGenerator\bin\Debug\netcoreapp3.1\RandowWordGenerator.Views.pdb
-C:\My_Stuff\Academics\Projects\VERY IMPORTANT\RandowWordGenerator\obj\Debug\netcoreapp3.1\RandowWordGenerator.csprojAssemblyReference.cache
 C:\My_Stuff\Academics\Projects\VERY IMPORTANT\RandowWordGenerator\obj\Debug\netcoreapp3.1\RandowWordGenerator.csproj.CoreCompileInputs.cache
 C:\My_Stuff\Academics\Projects\VERY IMPORTANT\RandowWordGenerator\obj\Debug\netcoreapp3.1\RandowWordGenerator.MvcApplicationPartsAssemblyInfo.cache
 C:\My_Stuff\Academics\Projects\VERY IMPORTANT\RandowWordGenerator\obj\Debug\netcoreapp3.1\RandowWordGenerator.RazorAssemblyInfo.cache
@@ -32,3 +31,5 @@ C:\My_Stuff\Academics\Projects\VERY IMPORTANT\RandowWordGenerator\obj\Debug\netc
 C:\My_Stuff\Academics\Projects\VERY IMPORTANT\RandowWordGenerator\obj\Debug\netcoreapp3.1\RandowWordGenerator.pdb
 C:\My_Stuff\Academics\Projects\VERY IMPORTANT\RandowWordGenerator\obj\Debug\netcoreapp3.1\RandowWordGenerator.genruntimeconfig.cache
 C:\My_Stuff\Academics\Projects\VERY IMPORTANT\RandowWordGenerator\obj\Debug\netcoreapp3.1\RandowWordGenerator.csproj.CopyComplete
+C:\My_Stuff\Academics\Projects\VERY IMPORTANT\RandowWordGenerator\bin\Debug\netcoreapp3.1\RandomWordsGeneratorDLL.dll
+C:\My_Stuff\Academics\Projects\VERY IMPORTANT\RandowWordGenerator\obj\Debug\netcoreapp3.1\RandowWordGenerator.csprojAssemblyReference.cache

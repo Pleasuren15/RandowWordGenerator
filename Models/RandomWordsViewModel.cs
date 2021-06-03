@@ -9,17 +9,15 @@ namespace RandowWordGenerator.Models
         [DisplayName("Words")]
         public int NumberOfOWords { get; set; }
 
-        [Required]
         [DisplayName("First Letter")]
-        public string FirstLetter { get; set; } 
+        public string FirstLetter { get; set; } = "";
 
-        [Required]
         [DisplayName("Last Letter")]
-        public string LastLetter { get; set; }  
+        public string LastLetter { get; set; } = "";
         
         [Required]
         [DisplayName("Paragraph(s)")]
-        public string NumberOfParagraphs { get; set; }
+        public int NumberOfParagraphs { get; set; }
 
         [DisplayName("Minimum")]
         [Required]

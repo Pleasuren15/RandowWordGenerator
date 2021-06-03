@@ -5,70 +5,46 @@
 }
 
 <div class="form-dialog pl-3 pr-3 pt-3 pb-1">
-    <p class="small font-weight-bold text-success">
-        <img src="~/images/icons8-warning-triangle-23.png" /> If fields are not changed, default settings will be used
-    </p>
+    <div class="row border-bottom border-success">
+        <h2 class="col-7 form-dialog-header"><a asp-controller="Home" asp-action="Index">Random Word Generator</a></h2>
+        <p class="col-5 pt-2 small font-weight-bold text-success">
+            <img src="~/images/icons8-warning-triangle-23.png" /> If fields are not changed, default settings will be used
+        </p>
+    </div>
     <form asp-controller="Home" asp-action="Index">
         <div asp-validation-summary="All" class="text-danger"></div>
-        <div class="form-group row m-2">
-            <div class="col-md-3 mt-1">
-                <div class="row">
-                    <label asp-for="@Model.NumberOfOWords" class="col-form-label text-center col-6"></label>
-                    <select asp-for="@Model.NumberOfOWords" class="form-control col-6" asp-items="@ViewBag.NumberOfWords">
-                        <option selected>select</option>
-                    </select>
+        <div class="row">
+            <div class="col-md-3">
+                <select asp-for="@Model.NumberOfOWords" class="form-control" asp-items="@ViewBag.NumberOfWords">
+                    <option value="35">Num. of words(35)</option>
+                </select>
+                <select asp-for="@Model.FirstLetter" class="form-control mt-1" asp-items="@ViewBag.FirstLetter">
+                    <option value="@ViewBag.EmptyString">First letter(random)</option>
+                </select>
+                <select asp-for="@Model.LastLetter" class="form-control mt-1" asp-items="@ViewBag.LastLetter">
+                    <option value="@ViewBag.EmptyString">Last letter(random)</option>
+                </select>
+                <select asp-for="@Model.NumberOfParagraphs" class="form-control mt-1" asp-items="@ViewBag.NumberOfParagraphs">
+                    <option value="1">Num. of paragraphs(1)</option>
+                </select>
+                <select asp-for="@Model.MinimumWordLength" class="form-control mt-1" asp-items="@ViewBag.LengthOfWords">
+                    <option value="5">Min. word length(5)</option>
+                </select>
+                <select asp-for="@Model.MaximumWordLength" class="form-control mt-1" asp-items="@ViewBag.LengthOfWords">
+                    <option value="8">Max. word length(8)</option>
+                </select>
+            </div>
+            <div class="col-md-9">
+                <textarea class="form-control" placeholder="@ViewBag.RandomWords" rows="10"></textarea>
+                <div class="form-group mt-2">
+                    <button type="submit" class="btn btn-primary w-25">Generate</button>
+                    <button type="button" class="btn btn-outline-warning w-25" data-toggle="modal" data-target="#AboutModal">Info</button>
                 </div>
             </div>
-            <div class="col-md-3  mt-1">
-                <div class="row">
-                    <label asp-for="@Model.FirstLetter" class="col-form-label text-center  col-6"></label>
-                    <select asp-for="@Model.FirstLetter" class="form-control col-6" asp-items="@ViewBag.FirstLetter">
-                        <option selected>select</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-3 mt-1">
-                <div class="row">
-                    <label asp-for="@Model.LastLetter" class="col-form-label text-center  col-6"></label>
-                    <select asp-for="@Model.LastLetter" class="form-control col-6" asp-items="@ViewBag.LastLetter">
-                        <option selected>select</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-3 mt-1">
-                <div class="row">
-                    <label asp-for="@Model.NumberOfParagraphs" class="col-form-label text-center col-6"></label>
-                    <select asp-for="@Model.NumberOfParagraphs" class="form-control col-6" asp-items="@ViewBag.NumberOfParagraphs">
-                        <option selected>select</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-6 mt-1">
-                <div class="row">
-                    <label asp-for="@Model.MinimumWordLength" class="col-form-label text-center col-6"></label>
-                    <select asp-for="@Model.MinimumWordLength" class="form-control col-6" asp-items="@ViewBag.LengthOfWords">
-                        <option selected>select</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-6 mt-1">
-                <div class="row">
-                    <label asp-for="@Model.MaximumWordLength" class="col-form-label text-center col-6"></label>
-                    <select asp-for="@Model.MaximumWordLength" class="form-control col-6" asp-items="@ViewBag.LengthOfWords">
-                        <option selected>select</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <textarea class="form-control" placeholder="Randomly generated words will be placed here" rows="15"></textarea>
-        <div class="form-group mt-2">
-            <button class="btn btn-primary w-25" type="submit">Generate</button>
-            <button class="btn btn-danger w-25" type="reset">Reset</button>
-            <button type="button" class="btn btn-warning w-25" data-toggle="modal" data-target="#AboutModal">Info</button>
-            <!-- Modal -->
         </div>
     </form>
 </div>
+<!-- Modal -->
 <div class="modal fade" id="AboutModal" tabindex="-1" role="dialog" aria-labelledby="AboutModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
