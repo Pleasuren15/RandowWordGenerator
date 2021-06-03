@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using RandowWordGenerator.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,9 +13,20 @@ namespace RandowWordGenerator.Controllers
     public class HomeController : Controller
     {
         // GET: /<controller>/
+        [HttpGet]
         public IActionResult Index(int _iNumberOfWordsMax = 50, int _iNumberOfParagraphsMax = 10)
         {
             PopulateDLLs(_iNumberOfWordsMax, _iNumberOfParagraphsMax);
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index(RandomWordsViewModel randomWordsViewModel)
+        {
+            if(ModelState.IsValid)
+            {
+
+            }
             return View();
         }
 
