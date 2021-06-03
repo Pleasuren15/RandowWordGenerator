@@ -3,77 +3,56 @@
 }
 
 <div class="form-dialog p-3">
+    <p class="small font-weight-bold text-success">
+        <img src="~/images/icons8-warning-triangle-23.png" /> If fields are not changed, default settings will be used
+    </p>
     <form>
         <div class="form-group row m-2">
             <div class="col-md-3 mt-1">
                 <div class="row">
                     <label class="col-form-label text-center col-6">Words</label>
-                    <select class="form-control col-6">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                    <select class="form-control col-6" asp-items="@ViewBag.NumberOfWords">
+                        <option selected>select</option>
                     </select>
                 </div>
             </div>
             <div class="col-md-3  mt-1">
                 <div class="row">
                     <label class="col-form-label text-center  col-6">First Letter</label>
-                    <select class="form-control col-6">
-                        <option>a</option>
-                        <option>b</option>
-                        <option>c</option>
-                        <option>d</option>
-                        <option>e</option>
+                    <select class="form-control col-6" asp-items="@ViewBag.FirstLetter">
+                        <option selected>select</option>
                     </select>
                 </div>
             </div>
             <div class="col-md-3 mt-1">
                 <div class="row">
                     <label class="col-form-label text-center  col-6">Last Letter</label>
-                    <select class="form-control col-6">
-                        <option>w</option>
-                        <option>a</option>
-                        <option>c</option>
-                        <option>d</option>
-                        <option>e</option>
+                    <select class="form-control col-6" asp-items="@ViewBag.LastLetter">
+                        <option selected>select</option>
                     </select>
                 </div>
             </div>
             <div class="col-md-3 mt-1">
                 <div class="row">
                     <label class="col-form-label text-center col-6">Paragraphs</label>
-                    <select class="form-control col-6">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                    <select class="form-control col-6" asp-items="@ViewBag.NumberOfParagraphs">
+                        <option selected>select</option>
                     </select>
                 </div>
             </div>
             <div class="col-md-6 mt-1">
                 <div class="row">
                     <label class="col-form-label text-center col-6">Minimum Length</label>
-                    <select class="form-control col-6">
-                        <option>4</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                    <select class="form-control col-6" asp-items="@ViewBag.LengthOfWords">
+                        <option selected>select</option>
                     </select>
                 </div>
             </div>
             <div class="col-md-6 mt-1">
                 <div class="row">
                     <label class="col-form-label text-center col-6">Maximum Length</label>
-                    <select class="form-control col-6">
-                        <option>7</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                    <select class="form-control col-6" asp-items="@ViewBag.LengthOfWords">
+                        <option selected>select</option>
                     </select>
                 </div>
             </div>

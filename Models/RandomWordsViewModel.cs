@@ -19,7 +19,7 @@ namespace RandowWordGenerator.Models
         
         [Required]
         [DisplayName("Paragraph(s)")]
-        public string Paragraphs { get; set; }
+        public string NumberOfParagraphs { get; set; }
 
         [DisplayName("Minimum")]
         [Required]
