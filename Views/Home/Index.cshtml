@@ -35,10 +35,10 @@
                 </select>
             </div>
             <div class="col-md-9">
-                <textarea class="form-control" placeholder="@ViewBag.RandomWords" rows="10"></textarea>
+                <textarea class="form-control" placeholder="@ViewBag.RandomWords" rows="15"></textarea>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary w-25">Generate</button>
-                    <button type="button" class="btn btn-outline-warning w-25" data-toggle="modal" data-target="#AboutModal">Info</button>
+                    <button type="submit" class="btn btn-gradient w-25">Generate</button>
+                    <button type="button" class="btn btn-gradient w-25" data-toggle="modal" data-target="#AboutModal">Info</button>
                 </div>
             </div>
         </div>
@@ -57,10 +57,30 @@
                 </button>
             </div>
             <div class="modal-body">
-                About text
+                <p class="small font-weight-bold">Developed by Pleasure Ndhlovu, 2021 June</p>
+                <p>Application was developed to aid in generating of random word during web development or any other use that may require fictitious words</p>
+                <div class="row">
+                    <div class="col-6 zoom-picture">
+                        <img src="~/images/ApplicationSnapshot.png" class="img-fluid rounded" />
+                    </div>
+                    <div class="col-6 zoom-picture">
+                        <img src="~/images/ApplicationSnapshot2.png" class="img-fluid rounded" />
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="~/images/icons8-whatsapp-22.png" /> <img src="~/images/icons8-phone-22.png" />
+                        <a class="small modal-footer-link" href="#">+2782 398 2825</a>
+                    </div>
+                    <div class="col-6">
+                        <img src="~/images/icons8-email-sign-22.png" /><a class="small modal-footer-link" href="#"> 2017269214@ufs4life.ac.za</a>
+                    </div>
+                    <div class="col-6">
+                        <img src="~/images/icons8-github-22.png" /><a class="small modal-footer-link" href="https://github.com/Pleasuren15"> Pleasuren15</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
