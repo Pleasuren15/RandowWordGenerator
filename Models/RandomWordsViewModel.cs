@@ -14,15 +14,11 @@ namespace RandowWordGenerator.Models
 
         [DisplayName("Last Letter")]
         public string LastLetter { get; set; } = "";
-        
-        [Required]
-        [DisplayName("Paragraph(s)")]
-        public int NumberOfParagraphs { get; set; }
 
         [DisplayName("Minimum")]
         [Required]
         public int MinimumWordLength { get; set; }
-        
+
         [Required]
         [DisplayName("Maximum")]
         public int MaximumWordLength { get; set; }

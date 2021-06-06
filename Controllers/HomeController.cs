@@ -21,9 +21,9 @@ namespace RandowWordGenerator.Controllers
 
         // GET: /<controller>/
         [HttpGet]
-        public IActionResult Index(int _iNumberOfWordsMax = 50, int _iNumberOfParagraphsMax = 10)
+        public IActionResult Index(int _iNumberOfWordsMax = 200, int _iNumberOfParagraphsMax = 10)
         {
-            ViewBag.RandomWords = "Randomly generated words will be placed here";
+            ViewBag.RandomWords = "Randomly generated wordswill be placed here";
             ViewBag.EmptyString = "";
             PopulateDLLs(_iNumberOfWordsMax, _iNumberOfParagraphsMax);
             return View();
